@@ -1,3 +1,4 @@
-from realEstateChatAgent import logger
+from src.realEstateChatAgent import logger
+
 
 logger.info("haggghvnvmnbmbnkjkljbmmn mnbjhmbm jmn")

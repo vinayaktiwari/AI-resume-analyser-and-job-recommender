@@ -1,3 +1,7 @@
+#  THIS IS JUST A TEMPLATE ==========
+#WILL MODIFY IT 
+
+
 from llama_index import VectorStoreIndex
 from langchain import LangChainModel
 from pymongo import MongoClient
