@@ -1,21 +1,16 @@
-mlflow==2.5.0
-langchain==0.0.184
-PyPDF2==3.0.1
+PyPDF2
+langchain==0.0.284
 python-dotenv==1.0.0
-streamlit==1.18.1
-openai==0.27.6
-faiss-cpu==1.7.4
-python-box==6.0.2
-llama_index
+streamlit==1.22.0
 pandas 
 numpy
 matplotlib
-# uncomment to use huggingface llms
-huggingface-hub==0.14.1
 notebook
-# uncomment to use instructor embeddings
-InstructorEmbedding==1.0.1
-sentence-transformers==2.2.2
-dvc
-setuptools
--e.
+pinecone-client 
+fastapi
+pydantic
+uvicorn
+google-generativeai
+datasets
+transformers
+sentence-transformers
