@@ -33,7 +33,4 @@ def test_query(query_text):
     print(res)
 
 
-
-
-
-test_query("The Household sector")
+test_query("Product discussions with stakeholders to finalize on UI functional requirements")

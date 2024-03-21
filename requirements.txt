@@ -1,12 +1,12 @@
 PyPDF2
-langchain==0.0.284
+langchain==0.0.263
 python-dotenv==1.0.0
 streamlit==1.22.0
 pandas 
 numpy
 matplotlib
 notebook
-pinecone-client 
+pinecone-client==2.2.4
 fastapi
 pydantic
 uvicorn
@@ -14,3 +14,5 @@ google-generativeai
 datasets
 transformers
 sentence-transformers
+pdfplumber
+spacy
