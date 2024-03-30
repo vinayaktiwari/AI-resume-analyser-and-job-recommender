@@ -50,25 +50,26 @@ class ValidationTemplate:
 class ResumeTrackerTemplate:
     def __init__(self,extracted_text):
         self.system_template = """
-Evaluate the candidate's resume against the provided job description, considering the competitive job market in the tech field. Your goal is to assess the resume's relevance, identify missing skills, recommend relevant books for upskilling, and offer suggestions for improvement.
+Evaluate the candidate's resume against the provided job description, considering the competitive job market. Your goal is to assess the resume's relevance, identify missing skills, recommend relevant books for upskilling, and offer suggestions for improvement.
 
-- Job Description: {job_description}
-- Resume: {resume_text}
-Calculate the percentage of match between the skills and requirements mentioned in resume_text and the job_description. Give a number and some explation
--"Skills Match":"%"
+{job_description} 
+{resume_text}
 
-Identify missing skills in the candidate's resume based on the job description. These skills should be essential for the position and not adequately represented in the resume.
--"Missing Skills:[]"
+Calculate the percentage of match between the resume and the job description. Give a number 
+"Skills Match": "%"
 
-Recommend books and Courses related to the missing skills to assist the candidate in upskilling and enhancing their qualifications for the position.
--"Books and Courses to consider for upskilling":""
+Do not unnecessarily suggest missing skills if the job role aligns with the candidate's skills. Only list skills that are not in resume but are present in the job description.
+
+Missing Keywords:
+
+Recommend books and courses related to the missing skills to assist the candidate in upskilling and enhancing their qualifications for the position.
+
+Books and Courses to consider for upskilling:
 
 Provide suggestions for the candidate on how to incorporate missing skills into their existing projects and work experience. Offer guidance on where and how to acquire these skills effectively.
--"Suggestions for job search to candidate":""
 
-
-
-    """
+Suggestions for job search to the candidate:
+"""
         self.human_template = """####{job_description}####"""
 
         self.system_message_prompt = SystemMessagePromptTemplate.from_template(
@@ -86,6 +87,7 @@ Provide suggestions for the candidate on how to incorporate missing skills into 
 
 
 
-
+# User input regarding what position looking for, this will hwlp to filter out roles during web scraping current hiring of roles, 
 #also consider company who is hiring and give links for preparation for that company
 # use missing skills and do collaborative filtering to recommend books to bucke up missing skills
+#

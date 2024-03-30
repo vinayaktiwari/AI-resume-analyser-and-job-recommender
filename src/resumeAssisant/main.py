@@ -10,8 +10,6 @@ from langchain.chains.question_answering import load_qa_chain
 from templates import ValidationTemplate,ResumeTrackerTemplate
 from dotenv import load_dotenv
 import PyPDF2 as pdf
-import spacy
-
 import os
 load_dotenv()
 
@@ -22,7 +20,7 @@ class Agent:
     def __init__(self,
                  llm_api_key,
                  pdf_text,
-                 temperature =0.2,
+                 temperature =0.1,
                  debug=True):
         
         self.pdf_text =pdf_text

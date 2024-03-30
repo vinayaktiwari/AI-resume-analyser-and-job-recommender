@@ -1,7 +1,7 @@
 PyPDF2
 langchain==0.0.263
 python-dotenv==1.0.0
-streamlit==1.22.0
+streamlit==1.32.0
 pandas 
 numpy
 matplotlib
@@ -16,3 +16,6 @@ transformers
 sentence-transformers
 pdfplumber
 spacy
+plotly
+bs4
+selenium
