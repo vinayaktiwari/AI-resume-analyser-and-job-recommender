@@ -6,9 +6,9 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 __version__ = "0.0.0"
 
-REPO_NAME = "Real-Estate-Chat-Agent"
+REPO_NAME = "AI-resume-analyser-and-job-recommender"
 AUTHOR_USER_NAME = "vinayaktiwari"
-SRC_REPO = "realEstateChatAgent"
+SRC_REPO = "AiResumeAssistant"
 AUTHOR_EMAIL = "vinayaktiwari2897@gmail.com"
 
 
