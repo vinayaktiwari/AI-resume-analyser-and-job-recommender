@@ -13,13 +13,9 @@ Welcome to PAUL (Personal Assistant for Upskilling and Employment)! PAUL is an A
 
 ## Files Included:
 
-1. **resume_analyzer.py:** This Python script contains the code for analyzing resumes, suggesting keywords, identifying missing skills, and recommending courses or books.
+1. **README.md:** Detailed instructions on how to use PAUL, along with an overview of the included files and their functionalities.
 
-2. **job_recommender.py:** Another Python script that handles the job recommendation process by analyzing the resume and job description to suggest suitable job opportunities.
-
-3. **README.md:** Detailed instructions on how to use PAUL, along with an overview of the included files and their functionalities.
-
-4. **requirements.txt:** List of Python dependencies required to run the scripts. Use `pip install -r requirements.txt` to install them.
+2. **requirements.txt:** List of Python dependencies required to run the scripts. Use `pip install -r requirements.txt` to install them.
 
 ## Note:
 
